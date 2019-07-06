@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+  }
+ /*mobile screens*/ 
+ @media screen and (max-width: 510px) {
+  body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 16px;
+    color: #444;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+  button {
+    display:block;
+    /* float: right; */
+    position: fixed;
+    right: 2em;
+    bottom: 40px;
+    padding:10px;
+    background-color: grey;
+  }
+  
+  nav,
+  footer {
+    padding: 1% 0;
+    background-color: #aaa;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  header {
+    padding: 12% 0;
+  }
+  main {
+      order: 2;
+      width: 80%;
+      border-left: solid black 3px;
+  }
+  section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #bbb;
+  }
+  
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  ul.ulNav {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    /* padding-left: 0;
+    margin-left: 0; */
+  }
+  .nav li {
+    display: inline;
+    font-size:16px;
+  }
+  .nav a {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  .sidebar {
+      display: block;
+      height: 100%;
+      width: 7%; /*to be converted in scalable measurement*/
+      margin-top: auto;
+      margin-bottom: auto;
+      
+      order: 1;
+      background-color: grey;
+  }
+  .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+  }
+ }
+/*for tablets*/
+@media screen and (min-width: 511px) and (max-width: 1400px) {
+  body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 16px;
+    color: #444;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+  button {
+    display:block;
+    /* float: right; */
+    position: fixed;
+    right: 2em;
+    bottom: 50px;
+    padding:15px;
+    background-color: red;
+  }
+  
+  nav,
+  footer {
+    padding: 1% 0;
+    background-color: #aaa;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  header {
+    padding: 12% 0;
+  }
+  main {
+      order: 2;
+      width: 80%;
+      border-left: solid black 3px;
+  }
+  section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #bbb;
+  }
+  
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  ul.ulNav {
+    display: inline;
+    list-style-type: none;
+    margin: 1%;
+    /* padding-left: 0;
+    margin-left: 0; */
+  }
+  .nav li {
+    display: inline;
+    font-size:16px;
+  }
+  .nav a {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  .sidebar {
+      display: block;
+      height: 100%;
+      width: 7%; /*to be converted in scalable measurement*/
+      margin-top: auto;
+      margin-bottom: auto;
+      
+      order: 1;
+      background-color: grey;
+  }
+  .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*for computers*/
+@media screen and (min-width: 1401px) {
+  body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 20px;
+    color: #444;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+  }
+  button {
+    display:block;
+    /* float: right; */
+    position: fixed;
+    right: 7em;
+    bottom: 70px;
+    padding:20px;
+  }
+  
+  nav,
+  footer {
+    padding: 1% 0;
+    background-color: #aaa;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  header {
+    padding: 12% 0;
+  }
+  main {
+      order: 2;
+      width: 80%;
+      border-left: solid black 3px;
+  }
+  section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #bbb;
+  }
+  
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  ul.ulNav {
+    display: inline;
+    list-style-type: none;
+    /* padding-left: 0;
+    margin-left: 0; */
+  }
+  .nav li {
+    display: inline;
+  }
+  .nav a {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 15px;
+  }
+  .sidebar {
+      display: block;
+      height: 100%;
+      width: 5%; /*to be converted in scalable measurement*/
+      margin-top: auto;
+      margin-bottom: auto;
+      
+      order: 1;
+      background-color: grey;
+  }
+  .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+  }
+}  
