@@ -172,7 +172,7 @@
   ul.ulNav {
     display: inline;
     list-style-type: none;
-    margin: 1%;
+    margin:5px;
   }
   .lifeIntro {
     width:70%;
@@ -219,6 +219,7 @@
   ul.ulNav {
     display: inline;
     list-style-type: none; 
+    margin:5px;
   }
   .lifeIntro {
     width:70%;
