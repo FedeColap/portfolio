@@ -18,7 +18,7 @@
   * {
       box-sizing: border-box;
       font-family: 'Tauri', sans-serif;
-      /* font-family: 'Oxygen', sans-serif; */
+      /* font-family: 'Nobile', sans-serif; */
     }
   a {
     text-decoration: none;
@@ -27,8 +27,13 @@
   a:hover{
     color: #FFA726;
   }
-  body {
-    
+  button a {
+    color: #292929;
+  }
+  button a:hover {
+    color: #292929;
+  }
+  body { 
     color: #292929;
     margin: 0;
     text-align: left;
@@ -68,12 +73,10 @@
     padding: 2%;
   }
   nav,
-  footer {
-    
+  footer {  
     background-color: #292929;
     width: 100%;
-    z-index: 10;
-    
+    z-index: 10; 
   }
   nav {
     position: fixed;
@@ -106,9 +109,6 @@
   .wrapper {
     display: flex;
     flex-flow: row wrap;
-    /* background-color: #ffffff;
-    opacity: 0.8;
-    filter: alpha(opacity=80); For IE8 and earlier */
   }
 
  /*mobile screens*/ 
@@ -117,7 +117,7 @@
     font-size: 16px; 
   }
   button {
-    right: 2em;
+    right: 2%;
     bottom: 40px;
     padding:7px;
     font-size: 14px;
@@ -145,7 +145,7 @@
   .sidebar {
       display: block;
       height: 100%;
-      width: 7%; /*to be converted in scalable measurement*/
+      width: 7%; 
       margin-top: auto;
       margin-bottom: auto;
       order: 1;
@@ -163,7 +163,7 @@
   }
   button {
     right: 2em;
-    bottom: 50px;
+    bottom: 60px;
     padding:7px;
   }
   nav {
@@ -173,7 +173,9 @@
     display: inline;
     list-style-type: none;
     margin: 1%;
-  
+  }
+  .lifeIntro {
+    width:70%;
   }
   .nav li {
     display: inline;

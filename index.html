@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>HTML wireframe</title>
+        <title>Federica Colapaoli Portfolio Webpage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Tauri&display=swap" rel="stylesheet">
         <!-- <link href="https://fonts.googleapis.com/css?family=Nobile|Oxygen&display=swap" rel="stylesheet"> -->
     </head>
     <body>
-        <nav role="navigation" class="nav">
-            
+        <nav role="navigation" class="nav">  
             <ul class="ulNav">
-                <li><a href="">Contact</a></li>
-                <li><a href="">Portfolio</a></li>
+                <li><a href="#pContacts">Contact</a></li>
+                <li><a href="#myPort">Portfolio</a></li>
             </ul>
         </nav>  
-        <img src="rosone.gif" alt="this is a background picture of an italian Rosone" class="rosone"/>
+        <div id="anchorTop"></div>
+        <img src="rosone.gif" alt="background decorative image" class="rosone"/>
         <div class="wrapper">
-            <div class="sidebar"></div>  <!--Float doesn't work, gotta style via CSS or flex -->  
+            <div class="sidebar"></div>  
            
-            <main role="main">
-                          
+            <main role="main">          
                 <header>
                     <h1>Welcome to my page! I am Federica.</h1>   
                 </header>
@@ -28,40 +27,36 @@
                 <section class="lifeIntro">
                     <p><span class="love"> I am a Front-end Developer </span> and recent graduate of the Full Stack Flex course at Thinkful coding bootcamp. </p>
                     <p><span class="love"> I believe in stubbornness and beauty. </span></p>
-                    <p>I grew up in a lovely town in Italy, learned english, became a lawyer, obtain an MBA here in the United States, started an Administrative Assistant and finally approached the Wonderful Wide World of coding... doesn't make any logical sense, right? </p>
-                    <p>Wrong. <br>
-                    I believe you have to try many ways before figuring out your own path, what you really like. And then insist until you reach your goals.</p>
+                    <p>I grew up in a lovely town in Italy, learned english, became a lawyer, obtain an MBA here in the United States, started as an Administrative Assistant and finally approached the Wonderful Wide World of coding... sounds like a pretty lively past, right? </p>
+                    <p>Maybe!<br>
+                     But I believe you have to try many ways before figuring out your own path, what you really like. And then insist until you reach your goals.</p>
                     <p>I like learning new languages and put my fantasy at work. <span class="love"> I love creating aesthetic solutions for websites and see them come to life. </span> I constantly search for a balanced combination of colors and fluid structure of the webpage.</p>
                 </section>
 
                 <section class="contacts">
-                    <p>You can check my works on <a href="https://github.com/FedeColap">Github</a> or contact me via <a href="https://www.linkedin.com/in/federica-colapaoli-9043897a">LinkedIn</a>, or via <a href="email">email</a>.</p>
+                    <p id="pContacts">You can check my works on <a href="https://github.com/FedeColap" target="_blank">Github</a> or contact me via <a href="https://www.linkedin.com/in/federica-colapaoli-9043897a" target="_blank">LinkedIn</a>, or via <a href="mailto:colapaoli.federica@gmail.com">email</a>.</p>
                 </section>
 
                 <section class="myPortfolio">
-                    <h2>MY PORTFOLIO</h2>
+                    <h2 id="myPort">MY PORTFOLIO</h2>
                 </section>
 
                 <section class="project1">
                     <h3><strong>How Nerd are you?</strong></h3>
-                    
                     <img src="question-quiz.png" alt="screenshot taken from my quiz app" class="pictureProj1"/>
                     <img src="wrong-quiz.png" alt="screenshot taken from my quiz app" class="pictureProj1"/>
-                    
-                    <p><a href="https://github.com/FedeColap/ultimate-quiz">Click here</a> to go to the Repo <br>
-                    <a href="https://fedecolap.github.io/ultimate-quiz/">Click here</a> to go to the Live Page<br>
-                    This app has been created using HTML, CSS and JS/JQuery.<br>
-                    Is there anything more colorful than Animes? Regardless of your preparation on this topic, please enjoy this trip... childish style! </p>
+                    <p><a href="https://github.com/FedeColap/ultimate-quiz" target="_blank">Click here</a> to go to the Repo <br>
+                        <a href="https://fedecolap.github.io/ultimate-quiz/" target="_blank">Click here</a> to go to the Live Page<br>
+                        This app has been created using HTML, CSS and JS/JQuery.<br>
+                        Is there anything more colorful than Animes? Regardless of your preparation on this topic, please enjoy this trip... childish style! </p>
                 </section>
                 
                 <section class="project2">
-                    
-                </section>   
-                
-            </main>
-            
+                </section>       
+            </main> 
         </div> 
-        <button>Top</button>  
+        <button><a href="#anchorTop">Top</a></button>  
         <footer role="content-info">2019 Federica Colapaoli</footer>
+        <!-- <script src="index.js"></script> -->
     </body>
 </html>
