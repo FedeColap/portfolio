@@ -1,37 +1,22 @@
-/*palette of colors: 
-  white : FFFFFF
-  pink: FA95FF
-  magenta: FF2FB8
-  lilla: C642BA
-  prune: 3B0053
-  charcoal:292929
-  black: 000000
-*/
+
 /*palette second
   azzurro : #00B8D4
   orange: #FFA726
   red: #FF3D00
   steel: #37474F
-
 */
 
   * {
       box-sizing: border-box;
-      font-family: 'Tauri', sans-serif;
-      /* font-family: 'Nobile', sans-serif; */
+      font-family: 'Raleway', sans-serif;
     }
   a {
+    font-family: 'Rock Salt', cursive;
     text-decoration: none;
     color: #00B8D4;
   }
   a:hover{
     color: #FFA726;
-  }
-  button a {
-    color: #292929;
-  }
-  button a:hover {
-    color: #292929;
   }
   body { 
     color: #292929;
@@ -47,19 +32,45 @@
   button {
     display:inline-block;
     border-radius: 10px;
-    border: solid 2px #3B0053;
+    border: #00B8D4;
     background-color: #00B8D4;
     font-size: 16px;
     cursor: pointer;
+    padding: 2px;
+  }
+  button a {
+    color: #292929;
+  }
+  button a:hover {
+    color: #292929;
+  }
+  button.top {
+    position: fixed;
+    border-radius: 50%;
+    right: 7em;
+    bottom: 70px;
+    padding:  7px 14px;
   }
   button:hover {
     background-color:#FFA726;
+    border: #FFA726;
+    color: white;
+  }
+  .myPortfolio {
+    padding-bottom: 0;
+  } /*RIVEDERSI QUESTO, DEVO AVVICINARE IL MY PORTFOLIO AI PROGETTI*/
+  h1, h2, h3, .top {
+    font-family: 'Rock Salt', cursive;
+  }
+  h3 {
+    margin-top: 5%;
   }
   header {
     padding-top: 12%;
     padding-bottom:3%;
   }
   footer {
+    font-family: 'Rock Salt', cursive;
     Padding: 10px;
     color: white;  
   }
@@ -101,14 +112,13 @@
   }
   .rosone {
     position: absolute;
-    right: 0;
-    opacity: 0.3;
-    width: 40%;
+    opacity: 0.2;
     z-index: -1;  
   }
   .wrapper {
     display: flex;
     flex-flow: row wrap;
+                              width: 90%;
   }
 
  /*mobile screens*/ 
@@ -117,14 +127,15 @@
     font-size: 16px; 
   }
   button.top {
-    position: fixed;
     right: 2%;
     bottom: 40px;
-    padding:7px;
-    font-size: 14px;
+    font-size: 10px;
+  }
+  footer {
+    font-size: 13px;
   }
   h1 {
-    font-size:28px;
+    font-size:26px;
   }
   nav {
     padding: 0;
@@ -136,12 +147,17 @@
   }
   .nav li {
     display: inline;
-    font-size:16px;  
+    font-size:13px;  
   }
   .nav a {
     display: inline-block;
     padding: 5px;
     margin-right: 15px;  
+  }
+  .rosone {
+    right: -70px;
+    top: -50px;
+    width: 80%;
   }
   .sidebar {
       display: block;
@@ -151,7 +167,7 @@
       margin-bottom: auto;
       order: 1;
   }
-  .pictureProj1 {
+  .pictureProj1, .pictureProj2 {
     width: 100%; 
   }   
 }
@@ -163,10 +179,9 @@
     font-size: 16px;
   }
   button.top {
-    position: fixed;
     right: 2em;
     bottom: 60px;
-    padding:7px;
+    font-size: 13px;
   }
   nav {
     padding: 0;
@@ -177,7 +192,7 @@
     margin:5px;
   }
   .lifeIntro {
-    width:70%;
+    width:100%;
   }
   .nav li {
     display: inline;
@@ -188,8 +203,13 @@
     padding: 5px;
     margin-right: 15px;
   }
-  .pictureProj1 {
+  .pictureProj1, .pictureProj2 {
     width: 49%; 
+  }
+  .rosone {
+    right: -200px;
+    top: -200px;
+    width: 70%;
   }
   .sidebar {
       display: block;
@@ -208,10 +228,9 @@
     font-size: 20px; 
   }
   button.top {
-    position: fixed;
     right: 7em;
     bottom: 70px;
-    padding:  7px 15px;
+    padding: 7px 14px;
   }
   h1{
     font-size: 32px;
@@ -225,7 +244,7 @@
     margin:5px;
   }
   .lifeIntro {
-    width:70%;
+    width:100%;
   }
   .love {
     font-weight:bold;
@@ -239,8 +258,13 @@
     margin-right: 15px;
 
   }
-  .pictureProj1 {
+  .pictureProj1, .pictureProj2 {
     width: 49%; 
+  }
+  .rosone {
+    right: -550px;
+    top: -550px;
+    width: 70%;
   }
   .sidebar {
       display: block;
