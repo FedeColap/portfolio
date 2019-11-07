@@ -1,0 +1,244 @@
+/*palette second
+  azzurro : #00B8D4
+  orange: #FFA726
+  red: #FF3D00
+  steel: #37474F
+  verde: #148C3B
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+    
+}
+a {
+  font-family: 'Rock Salt', cursive;
+  text-decoration: none;
+  color: #00B8D4;
+}
+a:hover{
+  color: #FFA726;
+}
+body { 
+  color: #292929;
+  margin: 0;
+  text-align: left;
+  line-height: 2.0;
+  width: 100%;
+}
+button {
+  display:inline-block;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom right, #ccf5ff, #0086b3);
+  font-size: 16px;
+  cursor: pointer;
+  padding-left: 10px; 
+  padding-right: 10px;
+}
+button a {
+  color: #292929;
+}
+button a:hover {
+  color: #292929;
+}
+button.top {
+  position: fixed;
+  border-radius: 50%;
+  right: 5%;
+  bottom: 5%;
+    /* padding:  7px 14px; */
+}
+button:hover {
+  background-image: linear-gradient(to bottom right, #ffebcc, #ff9900); 
+  color: white;
+}
+footer {
+  font-family: 'Rock Salt', cursive;
+  text-align: left;
+  color: white;
+  padding-left: 4%;
+}
+h1{
+  margin-top: 0%;
+}
+img {
+  width: 40%;
+}
+.iconWrap {
+  padding-top: 2%;
+  margin: auto;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.icon {
+  width: 40px;
+}
+li {
+  display:inline-block; 
+}
+.lifeIntro {
+  margin: auto;
+  /* margin-top: 4%;
+  margin-bottom: 4%; */
+  text-align: center;
+  /* border: 14px dotted #1C6EA4; */
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+  z-index: 2;
+}
+.love {
+  font-weight:bold;
+}
+main {
+  border-top: 14px groove #00B8D4;
+  padding-left: 30px;
+}
+nav, footer {
+    background-color: black;
+    width: 100%;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+}
+.personal {
+  background-image: url("rosone.jpeg");
+  background-repeat: no-repeat;  
+  background-position: center;
+  /*MEDIA QUERIES-------------------*/
+  background-size: 50%;
+}
+
+/*for computers*/
+@media screen and (min-width: 1401px) {
+  button.top {
+    right: 5%;
+    bottom: 70px;
+    padding: 7px 14px;
+  }
+  h1{
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  li{
+    margin-right: 3%;
+  }
+  .lifeIntro {
+    width: 60%;
+  }
+  nav, footer {
+    font-size: 28px;
+  }
+  p{
+    font-size: 22px;
+  }
+  .personal {
+    background-position: center;
+    background-size: 60%;
+  } 
+  .pictureProj1, .pictureProj2 {
+    width: 49%; 
+  }
+}
+
+/*for tablets*/
+@media screen and (min-width: 511px) and (max-width: 1400px) {
+  button.top {
+    right: 3%;
+    bottom: 60px;
+    font-size: 13px;
+  }
+  h1{
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  li{
+    margin-right: 5%;
+  }
+  .lifeIntro {
+    width: 80%;
+  }
+  nav, footer {
+    font-size: 24px;
+  }
+  p{
+    font-size: 22px;
+  }
+  .personal {
+    background-position: center;
+    background-size: 90%;
+  } 
+  .pictureProj1, .pictureProj2 {
+    width: 49%; 
+  }
+
+}
+
+/*mobile screens*/ 
+@media screen and (max-width: 510px){
+  button.top {
+    right: 2%;
+    bottom: 45px;
+    font-size: 16px;
+  }
+  h1{
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  .iconWrap {
+    padding-top: 2%;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+  li{
+    margin-right: 7%;
+  }
+  .lifeIntro {
+    width: 80%;
+  }
+  main {
+    width:90%;
+  }
+  nav, footer {
+    font-size: 22px;
+  }
+  p{
+    font-size: 22px;
+  }
+  .pictureProj1, .pictureProj2 {
+    width: 100%; 
+  } 
+  .personal {
+    background-size: 200%;
+  } 
+
+}

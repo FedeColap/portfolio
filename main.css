@@ -4,11 +4,13 @@
   orange: #FFA726
   red: #FF3D00
   steel: #37474F
+  verde: #148C3B
 */
 
   * {
       box-sizing: border-box;
       font-family: 'Raleway', sans-serif;
+      
     }
   a {
     font-family: 'Rock Salt', cursive;
@@ -32,11 +34,11 @@
   button {
     display:inline-block;
     border-radius: 10px;
-    border: #00B8D4;
-    background-color: #00B8D4;
+    background-image: linear-gradient(to bottom right, #ccf5ff, #0086b3);
     font-size: 16px;
     cursor: pointer;
-    padding: 2px;
+    padding-left: 10px; 
+    padding-right: 10px;
   }
   button a {
     color: #292929;
@@ -52,8 +54,7 @@
     padding:  7px 14px;
   }
   button:hover {
-    background-color:#FFA726;
-    border: #FFA726;
+    background-image: linear-gradient(to bottom right, #ffebcc, #ff9900); 
     color: white;
   }
   .myPortfolio {
@@ -90,7 +91,7 @@
     z-index: 10; 
   }
   nav {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     right: 0;

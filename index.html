@@ -3,47 +3,52 @@
     <head>
         <title>Federica Colapaoli - Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="revisited.css">
         <!-- <link href="https://fonts.googleapis.com/css?family=Tauri&display=swap" rel="stylesheet"> -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Nobile|Oxygen&display=swap" rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet"> -->
     </head>
     <body>
+        <div id="anchorTop"></div>
         <nav class="nav">  
             <ul class="ulNav">
                 <li><a href="#pContacts">Contact</a></li>
                 <li><a href="#myPort">Portfolio</a></li>
             </ul>
         </nav>  
-        <div id="anchorTop"></div>
-        <img src="rosone.gif" alt="background decorative image" class="rosone"/>
-        <div class="wrapper">
-            <div class="sidebar"></div>  
-           
-            <main>          
-                <header>
-                    <h1>Welcome to my page! I am Federica.</h1>   
-                </header>
-                
+        <!-- <img src="rosone.gif" alt="background decorative image" class="rosone"/> -->
+        <div class="personal">
+            <div class="sidebar"></div>              
                 <section class="lifeIntro">
-                    <p><span class="love"> I am a Front-end Developer </span> and future graduate of the Full Stack Flex course at Thinkful coding bootcamp. </p>
+                    <header>
+                        <h1>Welcome to my page! I am Federica.</h1>   
+                    </header>
+                    <p><strong> I am a Front-end Developer </strong> and future graduate of the Engineering Flex course at Thinkful coding bootcamp. </p>
                     <p><span class="love"> I believe in stubbornness and beauty. </span></p>
-                    <p>I grew up in a lovely town in Italy, learned english, became a lawyer, obtain an MBA here in the United States, started as an Administrative Assistant and finally approached the Wonderful Wide World of coding... sounds like a pretty lively past, right? </p>
-                    <p>Maybe!<br>
-                     But I believe you have to try many ways before figuring out your own path, what you really like. And then insist until you reach your goals.</p>
-                    <p>I like learning new languages and put my fantasy at work. <span class="love"> I love creating aesthetic solutions for websites and see them come to life. </span><div id="pContacts"></div>I constantly search for a balanced combination of colors and fluid structure of the webpage.</p>
+                    <p>Proud Italian, previous lawyer and mediator, MBA graduate. </p>
+                    <p>I like learning new languages and put my fantasy at work. I love creating aesthetic solutions for websites and see them come to life.</p>
+                    <p>I constantly search for a balanced combination of colors and fluid structure of the webpage.</p>
+                    <br>
+                    <p><strong>But, most important, I love coding all day long!</strong></p>
+                    <section id="pContacts">
+                        <p>You can check my works on Github or contact me via LinkedIn, or via email.</p>
+                        
+                        <div class="iconWrap">
+                            <a href="https://github.com/FedeColap" target="_blank"><img src="GitHub64px.png" class="icon" alt="link to my GitHub profile" /></a>
+                            <a href="https://www.linkedin.com/in/federica-colapaoli-9043897a" target="_blank"><img src="linkedIn.png" class="icon" alt="link to my LinkedIn profile" /></a>
+                            <a href="mailto:colapaoli.federica@gmail.com"><img src="gmail.jpg" class="icon" alt="link to my email address" /></a>
+                        </div>
+                    </section>
                 </section>
 
-                <section class="contacts">
-                    <p>You can check my works on <a href="https://github.com/FedeColap" target="_blank">Github</a> or contact me via <a href="https://www.linkedin.com/in/federica-colapaoli-9043897a" target="_blank">LinkedIn</a>, or via <a href="mailto:colapaoli.federica@gmail.com">email</a>.</p>
-                </section>
                 <div id="myPort"></div>
+        </div> 
 
-                <section class="myPortfolio">
-                    <h2>My Portfolio</h2>
-                </section>
-
+        <main>  
+            <section class="Portfolio">
+                <h2>My Portfolio</h2>
+                    
                 <section class="project1">
                     <h3>How Nerd are you?</h3>
                     <img src="question-quiz.png" alt="screenshot taken from my quiz app" class="pictureProj1"/>
@@ -53,7 +58,7 @@
                         This app has been created using HTML, CSS and JS/JQuery.<br>
                         Is there anything more colorful than Animes? Regardless of your preparation on this topic, please enjoy this trip... childish style! </p>
                 </section>
-                
+                    
                 <section class="project2">
                     <h3>Grimm Brothers' fairy tales</h3>
                     <img src="p2Intro.png" alt="screenshot taken from my fairy tales' app" class="pictureProj2"/>
@@ -62,11 +67,10 @@
                         <a href="https://fedecolap.github.io/ultimate-quiz/" target="_blank"><button>Click here</button></a> to go to the Live Page *link is temporarily not working*<br>
                         <a href="https://fedecolap.github.io/fairyAPPbackbone/" target="_blank"><button>Click here</button></a> to go to a different version (using an API to interact with Wikipedia)<br>
                         This app has been created using HTML, CSS and JS/JQuery, and RESTful APIs to retrieve data and propose them to the User</p>
-                </section>      
-            </main> 
-        </div> 
+                </section>  
+            </section>    
+        </main> 
         <a href="#anchorTop"><button class="top">UP</button></a>
-        <footer>2019 Federica Colapaoli</footer>
-        <!-- <script src="index.js"></script> -->
+        <footer>2019 | Federica Colapaoli</footer>
     </body>
 </html>
