@@ -76,12 +76,10 @@ footer {
 }
 h1{
   margin-top: 0%;
-  font-size: 100px; /*does not work*/
 }
 h2 {
   display: block;
   color: #fff;
-  font-size: 100px; /*does not work*/
   width: 100%;
   /* text-align: center; */
   /* display: table-cell; */
@@ -105,7 +103,10 @@ li {
   display:inline-block; 
 }
 .lifeIntro {
+  display: block;
+  position: float;
   margin: auto;
+  height: 2000px;
   /* margin-top: 4%;
   margin-bottom: 4%; */
   text-align: center;
@@ -152,13 +153,13 @@ ul {
     padding: 7px 14px;
   }
   h1{
-    font-size: 36px;
+    font-size: 100px;
   }
   h2 {
     font-size: 100px;
   }
   h3 {
-    font-size: 50px;
+    font-size: 60px;
   }
   li{
     margin-right: 3%;
