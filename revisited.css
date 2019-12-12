@@ -76,12 +76,12 @@ footer {
 }
 h1{
   margin-top: 0%;
-  font-size: 400px; /*does not work*/
+  font-size: 100px; /*does not work*/
 }
 h2 {
   display: block;
   color: #fff;
-  font-size: 800px; /*does not work*/
+  font-size: 100px; /*does not work*/
   width: 100%;
   /* text-align: center; */
   /* display: table-cell; */
@@ -132,6 +132,9 @@ nav{
 .pictureProj1 {
   border-radius:5px;
 }
+.project2 {
+  color: white;
+}
 ul {
   display: flex;
   flex-direction: row;
@@ -152,10 +155,10 @@ ul {
     font-size: 36px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 100px;
   }
   h3 {
-    font-size: 28px;
+    font-size: 50px;
   }
   li{
     margin-right: 3%;
