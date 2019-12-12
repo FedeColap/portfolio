@@ -5,4 +5,4 @@ Is made of HTML, CSS and jQuery.
 Additional projects will be introduced after their completion. 
 
 
-### The site is published at https://fedecolap.github.io/portfolio/
+### The site is published at https://fedecolap.github.io/portfolio/index.html
