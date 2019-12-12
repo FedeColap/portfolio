@@ -5,4 +5,4 @@ Is made of pure HTML and CSS **no javascript**
 Additional projects will be introduced after their completion. 
 
 
-### The site is published at https://fedecolap.github.io/portfolio-bones/
+### The site is published at https://fedecolap.github.io/portfolio/
