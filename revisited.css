@@ -1,90 +1,91 @@
-/*palette second
-  azzurro : #00B8D4
-  orange: #FFA726
-  red: #FF3D00
-  steel: #37474F
-  verde: #148C3B
-*/
-/*background color: #1fe5bd, #41a7b3, #5e227f, #48e0e4*/
 
+/* * { border: 1px solid red; } */
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  /* font-family: 'Raleway', sans-serif; */
-    
+  font-family: 'Montserrat', sans-serif;  
 }
 a {
-  font-family: 'Rock Salt', cursive;
   text-decoration: none;
-  color: #00B8D4;
+  color: #ABDCCE;
 }
 a:hover{
   color: #FFA726;
 }
 #avatar {
-  border-radius: 20px;
-  width: 30%;
+  display: inline;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  align-self: center;
 }
 body {
-  color: #292929;
   margin: 0;
   text-align: left;
   line-height: 2.0;
   width: 100%;
-  background: #1fe5bd;
+  background: #001a4d;
   transition: background 1s ease;
 }
-.content {
+.bothme {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.breathe {
+  display: block;
+  height: 400px;
+}
+/* .content {
   display: table;
   height: 100%;
   width: 100%;
+} */
+.bothme h2 {
+  display: inline-block;
+ margin: 0;
+ align-self: center;
+ width: 30%;
 }
 button {
   display:inline-block;
   border-radius: 10px;
-  background-image: linear-gradient(to bottom right, #ccf5ff, #0086b3);
+  background-image: linear-gradient(to bottom right, #00bcdd, #ff00ff);
   font-size: 16px;
   cursor: pointer;
   padding-left: 10px; 
   padding-right: 10px;
 }
-button a {
-  color: #292929;
-}
-button a:hover {
-  color: #292929;
-}
-button.top {
+#up {
   position: fixed;
-  border-radius: 50%;
   right: 5%;
   bottom: 5%;
-    /* padding:  7px 14px; */
 }
 button:hover {
-  background-image: linear-gradient(to bottom right, #ffebcc, #ff9900); 
+  background-image: linear-gradient(to bottom right, #ff00ff, #00bcdd); 
   color: white;
 }
 .breathe {
   height: 200px;
 }
+.description p {
+  margin-top: 0;
+}
 footer {
-  font-family: 'Rock Salt', cursive;
   text-align: left;
   color: white;
   padding-left: 4%;
 }
 h1{
   margin-top: 0%;
+  color: #ABDCCE;
 }
 h2 {
   display: block;
   color: #fff;
-  width: 100%;
-  /* text-align: center; */
-  /* display: table-cell; */
-  /* vertical-align: middle; */
-  /* clear: both; */
+  width: 50%;
+  border-bottom:#A6A670 solid 10px;
 }
 img {
   width: 40%;
@@ -98,22 +99,27 @@ img {
 }
 .icon {
   width: 40px;
+  background-color: white;
 }
 li {
   display:inline-block; 
 }
 .lifeIntro {
-  display: block;
-  position: float;
-  margin: auto;
-  height: 2000px;
+  display: flex;
+  /* width: 100%;  SEARCH FOR THIS IN THE MEDIA QUERIES */
+  margin: 0;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* border: 1px solid yellow;  */
+  /* margin: auto; */
   /* margin-top: 4%;
   margin-bottom: 4%; */
-  text-align: center;
+  /* text-align: center; */
   padding-top: 4%;
   padding-bottom: 4%;
   padding-left: 2%;
   padding-right: 2%;
+  color: #ABDCCE;
 }
 .love {
   font-weight:bold;
@@ -121,8 +127,12 @@ li {
 main {
   padding-left: 30px;
 }
+#mee {
+  border-radius: 20px;
+  width: 260px;
+}
 nav, footer {
-    background-color: black;
+    background-color: #001a4d;
     width: 100%;
 }
 nav{
@@ -130,11 +140,25 @@ nav{
   flex-direction: row;
   justify-content: flex-end;
 }
+/* .part {
+  border: solid 3px blue;
+} */
 .pictureProj1 {
   border-radius:5px;
 }
+.project1 {
+  color: #ABDCCE;
+}
 .project2 {
   color: white;
+}
+.project3 {
+  color: #ABDCCE;
+}
+.portfolio {
+  display: block;
+  /* position: fixed; */
+  /* nota come qui la section sparisce tutta, bisogna appurare il perche' */
 }
 ul {
   display: flex;
@@ -152,6 +176,12 @@ ul {
     bottom: 70px;
     padding: 7px 14px;
   }
+  .bothme h2 {
+    font-size: 50px;
+  }
+  .description {
+    width: 70%;
+  }
   h1{
     font-size: 100px;
   }
@@ -165,11 +195,11 @@ ul {
     margin-right: 3%;
   }
   .lifeIntro {
-    width: 60%;
+    width: 66%;
+    
   }
   nav, footer {
     font-size: 28px;
-    font-family: 'Sacramento', cursive;
   }
   p{
     font-size: 22px;
