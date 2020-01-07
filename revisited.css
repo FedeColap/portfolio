@@ -125,9 +125,9 @@ nav{
   flex-direction: row;
   justify-content: flex-end;
 }
-.part {
+/* .part {
   border: solid 3px yellow;
-}
+} */
 .pictureProj1 {
   border-radius:5px;
 }
