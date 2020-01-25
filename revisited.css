@@ -11,13 +11,6 @@ a {
 a:hover{
   color: #FFA726;
 }
-#avatar {
-  display: inline;
-  border-radius: 100%;
-  width: 35px;
-  height: 35px;
-  align-self: center;
-}
 body {
   margin: 0;
   text-align: left;
@@ -26,23 +19,11 @@ body {
   background: #042D45;
   transition: background 1s ease;
 }
-.bothme {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 .breathe {
   display: block;
   height: 400px;
 }
-.bothme h2 {
-  display: inline-block;
- margin: 0;
- align-self: center;
- width: 30%;
-}
+
 button {
   display:inline-block;
   border-radius: 10px;
@@ -130,6 +111,12 @@ nav{
 } */
 .pictureProj1 {
   border-radius:5px;
+}
+.pictureProj1 {
+  transition: all .2s ease-in-out;
+}
+.pictureProj1:hover {
+  transform: scale(1.03);
 }
 .project1 {
   color: #ABDCCE;
