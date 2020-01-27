@@ -33,6 +33,7 @@
   }
   button {
     display:inline-block;
+    border: transparent;
     border-radius: 10px;
     background-image: linear-gradient(to bottom right, #ccf5ff, #0086b3);
     font-size: 16px;

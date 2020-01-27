@@ -129,8 +129,6 @@ nav{
 }
 .portfolio {
   display: block;
-  /* position: fixed; */
-  /* nota come qui la section sparisce tutta, bisogna appurare il perche' */
 }
 ul {
   display: flex;
