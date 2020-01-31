@@ -1,5 +1,10 @@
 
 /* * { border: 1px solid red; } */
+/*COLOR-PALETTES
+  OLD: #042D45, #E88C02, #626267, #042D45 blu orange gray blu
+  CURRENT: #042D45, #065609, #053E06, #470156, #A7253D BLU, green, deep GREEN, PURPLE, bordeaux
+
+*/
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;  
@@ -138,11 +143,8 @@ nav{
   transition: all .2s ease-in-out;
   width: 100%; 
 }
-.pictureProj1:hover {
-  transform: scale(1.1,1.1);
-}
-.project1 {
-  color: #ABDCCE;
+.projectfont {
+  color: #DCEFEA;
 }
 .project2 {
   color: white;
@@ -151,7 +153,6 @@ nav{
   color: #ABDCCE;
 }
 .projDescription {
-  text-align: center;
   font-size: 18px;
 }
 .portfolio {
@@ -159,6 +160,9 @@ nav{
   width: 90%;
   margin: auto;
   /* border: 2px solid red; */
+}
+.part_safe{
+  display: inline;
 }
 .slideshow-container {
   display: none;
@@ -180,7 +184,7 @@ ul {
 
 
 /*for tablets*/
-@media screen and (min-width: 511px) and (max-width: 1075px) {
+@media screen and (min-width: 511px) {
   button.top {
     right: 3%;
     bottom: 60px;
@@ -212,9 +216,7 @@ ul {
   }
   .iconWrap {
     padding-top: 20%;
-    margin: auto;
     width: 80%;
-    display: flex;
     justify-content: space-evenly;
   }
   img#mee {
@@ -225,11 +227,8 @@ ul {
     margin-right: 5%;
   }
   .lifeIntro {
-    width: 90%;
     flex-direction: row;
-    justify-content: space-between;
-    /* align-items: flex-end; */
-    
+    justify-content: space-between;  
   }
   nav, footer {
     font-size: 24px;
@@ -241,15 +240,94 @@ ul {
     font-size: 22px;
   }
   .pictureProj1 {
-    width: 90%; 
+    width: 100%; 
   }
-  .pictureProj1:hover {
-  transform: scale(1.5,1.5);
-}
   .portfolio {
     display: block;
     width: 70%;
     margin: auto;
+  }
+  .slideshow-container {
+    display: block;
+  }
+  .mobilePics {
+    display: none;
+  }
+
+    /* Slideshow container */
+  .slideshow-container {
+    /* border: 1px solid pink; */
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides1, .mySlides2,.mySlides3,.mySlides4 {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover  {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+  /* The dots/bullets/indicators */
+  .dot1, .dot2, .dot3, .dot4 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
   }
 }
 
@@ -276,7 +354,6 @@ ul {
   h1{
     font-size: 100px;
     display: block;
-    margin: auto;
     margin-bottom: 150px;
     width: 66%;
   }
@@ -293,9 +370,7 @@ ul {
   }
   .iconWrap {
     padding-top: 7%;
-    margin: auto;
     width: 40%;
-    display: flex;
     justify-content: space-around;
   }
   li{
@@ -303,30 +378,18 @@ ul {
   }
   .lifeIntro {
     width: 66%;
-    justify-content: space-between;
     align-items: flex-start;
-    flex-direction: row;
   }
   nav, footer {
     font-size: 28px;
   }
-  .part {
-    min-height: 1500px;
-  }
-  .pictureProj1 {
-    width: 60%; 
-  } 
-  .pictureProj1:hover {
-    transform: scale(2.2);
-  }
   .portfolio {
-    display: block;
     width: 50%;
-    margin: auto;
   }
   .projDescription{
     font-size: 22px;
   }
+
 }
 
 

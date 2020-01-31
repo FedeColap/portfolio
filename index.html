@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Federica Colapaoli portfolio, built in pure CSS, it shows past projects in both front and back end web development.">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="main2.css">
         <link rel="stylesheet" type="text/css" href="up.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
@@ -18,7 +18,7 @@
             </ul>
         </nav> 
         <div class="bg-color"> 
-            <main>    
+            <main> 
                 <header>
                     <h1>WELCOME, <br>I AM FEDERICA</h1>   
                 </header>
@@ -45,9 +45,8 @@
                     </div> 
                            
                 </section>
-
                 <div class="breathe"></div>
-                    
+            
                 <div id="myPort"></div>  
                 <h2>MY PORTFOLIO</h2>
                 <section class="portfolio">
@@ -55,10 +54,36 @@
                    
                     <div class="part" data-background="#042D45">
                    
-                        <section class="project3">
+                        <section class="project2">
                             <h3>Bring it (Please)</h3>
-                            <img src="projectPics/p3intro.png" alt="screenshot taken from my Bring It app" class="pictureProj1"/>
-                            <img src="projectPics/p3list.png" alt="screenshot taken from my Bring It app" class="pictureProj1"/>
+                            <!-- Slideshow container -->
+                            <div class="slideshow-container">
+                                <!-- Full-width images with number and caption text -->
+                                <div class="mySlides1 fade">
+                                    <img src="projectPics/p3intro.png" alt="landing page from Bring It app" class="pictureProj1" >
+                                </div>
+                                <div class="mySlides1 fade">
+                                    <img src="projectPics/p3list.png" alt="results page from Bring It app" class="pictureProj1">
+                                </div>
+                                <div class="mySlides1 fade">
+                                    <img src="projectPics/p3mission.png" alt="intro message from Bring It app" class="pictureProj1">
+                                </div>
+                            
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+                            </div>
+                            <br>
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                                <span class="dot1" onclick="currentSlide1(1)"></span>
+                                <span class="dot1" onclick="currentSlide1(2)"></span>
+                                <span class="dot1" onclick="currentSlide1(3)"></span>
+                            </div>
+                            <div class="mobilePics">
+                                <img src="projectPics/p3intro.png" alt="landing page from Bring It app" class="pictureProj1"/>
+                                <img src="projectPics/p3list.png" alt="results page from Bring It app" class="pictureProj1"/>
+                            </div>
                             <div class="butspace">
                                 <p class="fakeButton"><a href="https://github.com/FedeColap/bring-it-client" target="_blank">Client Repo</a>  </p>
                                 <p class="fakeButton"><a href="https://github.com/FedeColap/bring-it-server" target="_blank">Server Repo</a></p>   
@@ -69,12 +94,38 @@
                                 Created using React, Node.js and PostgreSQL</p>
                         </section> 
                     </div>
-                    <div class="part" data-background="#ce7c02">
+                    <div class="part" data-background="#053E06">
                    
-                        <section class="project4">
+                        <section class="project3">
                             <h3>Unleash</h3>
-                            <img src="projectPics/p4login.png" alt="screenshot taken from Unleash login" class="pictureProj1"/>
-                            <img src="projectPics/p4landing.png" alt="screenshot taken from Unleash landing page" class="pictureProj1"/>
+                            <!-- Slideshow container -->
+                            <div class="slideshow-container">
+                                <!-- Full-width images with number and caption text -->
+                                <div class="mySlides2 fade">
+                                    <img src="projectPics/p4login.png" alt="login page from Unleash login" class="pictureProj1" >
+                                </div>
+                                <div class="mySlides2 fade">
+                                    <img src="projectPics/p4landing.png" alt="landing page from Unleash" class="pictureProj1">
+                                </div>
+                                <div class="mySlides2 fade">
+                                    <img src="projectPics/p4welcome.png" alt="welcome page from Unleash" class="pictureProj1">
+                                </div>
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                            </div>
+                            <br>
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                                <span class="dot2" onclick="currentSlide2(1)"></span>
+                                <span class="dot2" onclick="currentSlide2(2)"></span>
+                                <span class="dot2" onclick="currentSlide2(3)"></span>
+                            </div>
+
+                            <div class="mobilePics">
+                                <img src="projectPics/p4login.png" alt="login page from Unleash login" class="pictureProj1"/>
+                                <img src="projectPics/p4landing.png" alt="landing page from Unleash" class="pictureProj1"/>
+                            </div>
                             <div class="butspace">
                                 <p class="fakeButton"><a href="https://github.com/FedeColap/Unleash-react" target="_blank">Client Repo</a></p>   
                                 <p class="fakeButton"><a href="https://github.com/FedeColap/unleash-server" target="_blank">Server Repo</a></p>   
@@ -86,25 +137,76 @@
                                 Inspired by <a href="https://foaas.com/" target="_blank">foaas</a> (yes, it exists!)</p>
                         </section> 
                     </div>
-                    <div class="part" data-background="#626267">   
+                    <div class="part" data-background="#470156">   
                             <section class="project2">
                                 <h3>Grimm Brothers' fairy tales</h3>
-                                <img src="projectPics/p2Intro.png" alt="screenshot taken from my fairy tales' app" class="pictureProj1"/>
-                                <img src="projectPics/p2List.png" alt="screenshot taken from my fairy tales' app" class="pictureProj1"/>
-                                <div class="butspace">
-                                    <p class="fakeButton"><a href="https://github.com/FedeColap/listen-a-fairytale" target="_blank">Repo</a></p>  
-                                    <p class="fakeButton"><a href="https://fedecolap.github.io/fairyAPPbackbone/" target="_blank">Live Page</a></p>
+                                <!-- Slideshow container -->
+                                <div class="slideshow-container">
+                                <!-- Full-width images with number and caption text -->
+                                    <div class="mySlides3 fade">
+                                        <img src="projectPics/p2Intro.png" alt="landing page from my fairy tales' app"  class="pictureProj1">
+                                    </div>
+                                    <div class="mySlides3 fade">
+                                        <img src="projectPics/p2List.png" alt="list of available fairytales (screenshot)" class="pictureProj1">
+                                    </div>
+                                    <div class="mySlides3 fade">
+                                        <img src="projectPics/p2info.png" alt="info about Pinocchio" class="pictureProj1">
+                                    </div>
+                                    <!-- Next and previous buttons -->
+                                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
                                 </div>
-                                    <p class="projDescription">This app has been created using HTML, CSS and JS/JQuery, and RESTful APIs to retrieve information, <br>
+                                <br>
+                                <!-- The dots/circles -->
+                                <div style="text-align:center">
+                                    <span class="dot3" onclick="currentSlide3(1)"></span>
+                                    <span class="dot3" onclick="currentSlide3(2)"></span>
+                                    <span class="dot3" onclick="currentSlide3(3)"></span>
+                                </div>
+                                <div class="mobilePics">
+                                    <img src="projectPics/p2Intro.png" alt="landing page from my fairy tales' app" class="pictureProj1"/>
+                                    <img src="projectPics/p2List.png" alt="list of available fairytales (screenshot)" class="pictureProj1"/>
+                                </div>
+                                <div class="butspace">
+                                        <p class="fakeButton"><a href="https://github.com/FedeColap/listen-a-fairytale" target="_blank">Repo</a></p>  
+                                        <p class="fakeButton"><a href="https://fedecolap.github.io/fairyAPPbackbone/" target="_blank">Live Page</a></p>
+                                </div>
+                                <p class="projDescription">This app has been created using HTML, CSS and JS/JQuery, and RESTful APIs to retrieve information, 
                                         audio and text of fairytales and propose them to the user.</p>
                             </section> 
                     </div> 
 
-                    <div class="part" data-background="#042D45">
-                        <section class="project1">
+                    <div class="part" data-background="#A7253D">
+                        <section class="project3">
                             <h3>How Nerd are you?</h3>
-                            <img src="projectPics/question-quiz.png" alt="screenshot taken from my quiz app" class="pictureProj1"/>
-                            <img src="projectPics/wrong-quiz.png" alt="screenshot taken from my quiz app" class="pictureProj1"/>
+                            <!-- Slideshow container -->
+                            <div class="slideshow-container">
+                                <!-- Full-width images with number and caption text -->
+                                <div class="mySlides4 fade">
+                                    <img src="projectPics/question-quiz.png" alt="a random question from my quiz app" class="pictureProj1" >
+                                </div>
+                                <div class="mySlides4 fade">
+                                    <img src="projectPics/wrong-quiz.png" alt="wrong answer from my quiz app" class="pictureProj1">
+                                </div>
+                                <div class="mySlides4 fade">
+                                    <img src="projectPics/ending-quiz.png" alt="ending page from my quiz app" class="pictureProj1">
+                                    </div>
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+                            </div>
+                            <br>
+                            <!-- The dots/circles -->
+                            <div style="text-align:center">
+                                <span class="dot4" onclick="currentSlide4(1)"></span>
+                                <span class="dot4" onclick="currentSlide4(2)"></span>
+                                <span class="dot4" onclick="currentSlide4(3)"></span>
+                            </div>
+
+                            <div class="mobilePics">
+                                <img src="projectPics/question-quiz.png" alt="a random question from my quiz app" class="pictureProj1"/>
+                                <img src="projectPics/wrong-quiz.png" alt="wrong answer from my quiz app" class="pictureProj1"/>
+                            </div>
                             <div class="butspace">
                                 <p class="fakeButton"><a href="https://github.com/FedeColap/ultimate-quiz" target="_blank" >Repo</a></p>  
                                 <p class="fakeButton"><a href="https://fedecolap.github.io/ultimate-quiz/" target="_blank">Live Page</a></p>
@@ -122,6 +224,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
         <script src="scrollie/jquery.scrollie.js"></script>  
         <script src="script.js"></script>
+        <script src="slideshow.js"></script>
     </body>
     
 </html>
